@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@200;300&display=swap'); /*Title*/
+@import url('https://fonts.googleapis.com/css?family=Satisfy'); /*Extras and h2*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght100;300&display=swap'); /*<p>*/
+
+#css-zen-garden{
+    display:flex;
+    margin: auto;
+    max-width: 100%;
+    text-decoration:none;
+    justify-content: center;
+    align-content: center;
+  }
+
+header{
+    background: url(zen.svg);
+    background: url(huntington.png);
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 50px;
+    color:white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+h3{
+    font-family: 'IBM Plex Mono', monospace;
+    color:black;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+}
+
+p{
+    font: 'Roboto', sans-serif;
+    color: #61806B;
+    text-align: left;
+    width:auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+a{
+    color: #2F4F4C;
+    text-decoration: none;
+}
+
+a:hover{
+    transition: 0.2s;
+    opacity: 50%; 
+}
+
+/*a:visited{
+    color:black;
+}                       Removed for stylistic choice*/ 
+
+#zen-participation, #zen-benefits{
+    background-color: #7B987C;
+    background-image: url("bamboo.png");
+    opacity: 100%;
+    position:left;
+    max-width: auto;
+    height: 150%;
+    float: left;
+    display: block;
+    padding: 0px; 
+} 
+
+#zen-benefits{
+    margin-bottom: 10px;
+}
+
+#zen-participation p, #zen-benefits p{
+    color: white;
+    padding-bottom: 10px;
+}
+
+#zen-requirements [role="contentinfo"]{
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #7B987C;
+    text-align: center;
+    max-width: auto;
+    padding: 20px;
+    font-size: 18px;
+    color:#AEAEAE;
+    margin-bottom: auto;
+}
+
+#zen-requirements [role="contentinfo"] a{
+    color:white;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
+footer{
+    background-color: #2F4F4C;
+    padding: 30px;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.zen-validate-html,.zen-validate-css,.zen-license,.zen-accessibility,.zen-github{
+    color: white;
+    font-size: 25px;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+/*BELOW IS THE SIDEBAR/BOTTOM BIT USING FLEX*/
+
+
+/*.sidebar{
+    background:#DEE5DE;
+    text-align: center;
+    max-width: 100%;
+    justify-content: space-evenly;
+}*/
+
+.wrapper{
+    display:flex;
+    background:#DEE5DE;
+    text-align: center;
+    min-width: 100%;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+.design-selection ul {
+    list-style-type: none;
+    justify-content: center;
+}
+
+.sidebar h3{
+    opacity: 0%;
+}
+
+.design-selection{
+    background: #DEE5DE;
+    min-height: 2vh;
+
+}
+
+.design-selection li{
+    display:inline-flex;
+    font-family: 'IBM Plex Mono', monospace;
+    color:#7B987C;
+    font-size: 15px;
+    background: #DEE5DE;
+    border-bottom: 2px solid #CBCBCB;
+    padding: 30px;
+    justify-content: space-evenly;
+    width:500px;
+    height: 2%;
+    order:1;
+}
+
+.design-archives li{
+    display:inline-flex;
+    list-style-type: none;
+    background: #DEE5DE;
+    font-family: 'IBM Plex Mono', monospace;
+    color:#7B987C;
+    font-size: 15px;
+    width: 500px;
+    justify-items: space;
+    justify-content: center;
+    padding-top:0px;
+    padding-bottom: 40px;
+    order:2;
+}
+
+#zen-resources{
+    background: #7B987C;
+    background-image: url("bamboo.png");
+    opacity:100%;
+    color:#2F4F4C;
+    justify-items: center;
+}
+
+#zen-resources li{
+    list-style-type: none;
+    display:inline-flex;
+    opacity: 100%;
+    width:500px;
+    height: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    padding-bottom: 30px;
+    justify-items: left;
+    justify-content: center;
+    order:3;
+}
